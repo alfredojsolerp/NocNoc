@@ -1,0 +1,12 @@
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between the fields */
+  }
+  
+  .form-field {
+    flex: 1 1 auto;
+    margin-right: 20px; /* Adjust padding or margin for space between fields */
+    max-width: 300px; /* Optional: ensure fields don't shrink too small */
+  }
+  

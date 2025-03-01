@@ -1,0 +1,101 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.0.5",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Alfredo.NocNoc.Application": {
+      "path": "src/Alfredo.NocNoc.Application/Alfredo.NocNoc.Application.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.Application.Tests": {
+      "path": "test/Alfredo.NocNoc.Application.Tests/Alfredo.NocNoc.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Alfredo.NocNoc.Domain.Shared": {
+      "path": "src/Alfredo.NocNoc.Domain.Shared/Alfredo.NocNoc.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.Application.Contracts": {
+      "path": "src/Alfredo.NocNoc.Application.Contracts/Alfredo.NocNoc.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.HttpApi": {
+      "path": "src/Alfredo.NocNoc.HttpApi/Alfredo.NocNoc.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.HttpApi.Client": {
+      "path": "src/Alfredo.NocNoc.HttpApi.Client/Alfredo.NocNoc.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.EntityFrameworkCore.Tests": {
+      "path": "test/Alfredo.NocNoc.EntityFrameworkCore.Tests/Alfredo.NocNoc.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Alfredo.NocNoc.EntityFrameworkCore": {
+      "path": "src/Alfredo.NocNoc.EntityFrameworkCore/Alfredo.NocNoc.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.TestBase": {
+      "path": "test/Alfredo.NocNoc.TestBase/Alfredo.NocNoc.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Alfredo.NocNoc.Domain.Tests": {
+      "path": "test/Alfredo.NocNoc.Domain.Tests/Alfredo.NocNoc.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Alfredo.NocNoc.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Alfredo.NocNoc.HttpApi.Client.ConsoleTestApp/Alfredo.NocNoc.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Alfredo.NocNoc.DbMigrator": {
+      "path": "src/Alfredo.NocNoc.DbMigrator/Alfredo.NocNoc.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.HttpApi.Host": {
+      "path": "src/Alfredo.NocNoc.HttpApi.Host/Alfredo.NocNoc.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "Alfredo.NocNoc.Domain": {
+      "path": "src/Alfredo.NocNoc.Domain/Alfredo.NocNoc.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

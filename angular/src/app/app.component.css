@@ -1,0 +1,11 @@
+.flight-results-reservation-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flight-results-reservation-container app-flight-results,
+.flight-results-reservation-container app-reservation-form {
+    flex: 1;
+    min-width: 300px;
+}

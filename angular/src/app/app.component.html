@@ -1,0 +1,11 @@
+<img src="logo.png">
+
+<app-flight-search [locations]="locations" (filtersSelected)="onFiltersSelected($event)"></app-flight-search>
+
+<hr />
+
+<div class="flight-results-reservation-container">
+  <app-flight-results [flights]="flights" (flightSelected)="onFlightSelected($event)"></app-flight-results>
+
+  <app-reservation-form [selectedFlight]="selectedFlight" (passengerFormSubmitted)="onPnrFormSubmitted($event)"></app-reservation-form>
+</div>

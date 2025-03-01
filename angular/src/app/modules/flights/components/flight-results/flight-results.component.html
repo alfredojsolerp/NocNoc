@@ -1,0 +1,17 @@
+@if (flights.length > 0) {
+<h2>Resultados de vuelos</h2>
+
+<hr />
+
+<ul>
+  @for (flight of flights; track flight.id) {
+  <div class="flight-item" (click)="selectFlight(flight)">
+    <div><b>Origen:</b> {{ flight.origin }} - <b>Destino:</b> {{ flight.destination }}</div>
+    <div><b>Ida:</b> {{ flight.departureDate | date:"dd/MM/yyyy" }} - <b>Vuelta:</b> {{ flight.returnDate | date:"dd/MM/yyyy" }}</div>
+    <div><b>Aerolínea:</b> {{ flight.airline }}</div>
+    <div><b>Precio:</b> {{ flight.price | currency }}</div>
+  </div>
+  <hr />
+  }
+</ul>
+}

@@ -1,0 +1,34 @@
+@if (selectedFlight) {
+  <h2>Formulario de Reserva</h2>
+
+  <hr />
+
+  <div>
+    <h3>Vuelo seleccionado: {{ selectedFlight.airline }}</h3>
+    <h4>Ida: {{ selectedFlight.departureDate | date:"dd/MM/yyyy" }} - Vuelta: {{ selectedFlight.returnDate | date:"dd/MM/yyyy" }}</h4>
+    <h4>Precio: {{ selectedFlight.price | currency}}</h4>
+  </div>
+
+  <div class="form-card">
+    <form [formGroup]="passengerForm" (ngSubmit)="onSubmit()" class="reservation-form">
+
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="passengerName" placeholder="Ingrese nombre del pasajero" />
+        <mat-error *ngIf="passengerForm.get('passengerName').hasError('required')">
+          Campo nombre es obligatorio
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Apellido</mat-label>
+        <input matInput formControlName="passengerSurname" placeholder="Ingrese apellido del pasajero" />
+        <mat-error *ngIf="passengerForm.get('passengerSurname').hasError('required')">
+          Campo apellido es obligatorio
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Crear PNR</button>
+    </form>
+  </div>
+}
