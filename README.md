@@ -15,8 +15,6 @@
 
 # Notas
 
-Se decantó por el uso de A
-
 ## Glas Api Mock
 
 - El mock de la GlasApi fue de gran utilidad para experimentar con las funcionalidades más primitivas de una aplicación ASP.NET. Dado el caso, por ejemplo, en el método GetSearch se practicó recibir los parámetros por "query", mientras que en el método GetSell por "route".
