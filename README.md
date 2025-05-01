@@ -7,11 +7,11 @@
 
 ## Pasos
 
-1. Chequear que en el proyecto `Alfredo.NocNoc.EntityFrameworkCore` exista la migración inicial.
-2. Correr la aplicación `Alfredo.NocNoc.DbMigrator` para crear la base de datos inicial de Abp.
+1. Revisar que en el proyecto `Alfredo.NocNoc.EntityFrameworkCore` exista la migración inicial.
+2. Correr la aplicación `Alfredo.NocNoc.DbMigrator` para crear la base de datos e insertar la migración inicial de Abp.
 3. Correr la aplicación `Alfredo.NocNoc.GlasApi`.
 4. Correr la aplicación `Alfredo.NocNoc.HttpApi.Host`.
-5. Correr la aplicación web (ng serve, etc).
+5. Correr la aplicación Angular (ng serve, etc).
 
 # Notas
 
@@ -31,7 +31,7 @@
 
 - El manejo de excepciones se hizo a nivel del módulo GlasApiClient. En caso de que se necesite elevar el manejo a la capa de aplicación se recomienda el uso de la clase UserFriendlyException de Abp.
 
-- Se implementó un único unit testing para que sirva de referencia de cómo sería una clase de prueba estándar
+- Se implementó un único unit testing para que sirva de referencia de cómo sería una clase de prueba estándar.
 
 ## Frontend
 
@@ -48,9 +48,9 @@
 - Estudiar en qué capas de la aplicación faltaron las validaciones correspondientes.
 - Estudiar la implementación de entidades y servicios de dominio.
 - Estudiar la implementación de una caché para los datos - obtenidos desde GLAS (Redis).
-- Estilizar mejor la aplicación web
-- Implementar paginación en la aplicación web
-- Implementar signals en la aplicación web para mejorar el rendimiento
+- Estilizar mejor la aplicación web.
+- Implementar paginación en la aplicación web.
+- Implementar signals en la aplicación web para mejorar el rendimiento.
 - Cambiar los Console.WriteLine por logs.
 - Implementar más UTs.
 - Implementar ambientes (develop, staging y production).
